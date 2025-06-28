@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tieude"
+            android:text="Chi tiết sản phẩm"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#800080"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="167dp"
+                android:layout_height="237dp"
+                android:layout_marginEnd="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ao" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tensp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Tên sản phẩm:\n\nZ-LETTER CORDUROY SHIRT"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Giá -->
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Giá: 339.000 ₫"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Hàng ngang chứa nút và icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Nút thêm vào giỏ hàng -->
+                    <Button
+                        android:id="@+id/giohang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="#800080"
+                        android:text="Thêm vào giỏ hàng"
+                        android:textColor="#FFFFFF" />
+
+                    <!-- Icon giỏ hàng -->
+                    <ImageView
+                        android:id="@+id/cart_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/giohang" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Mô tả sản phẩm -->
+        <TextView
+            android:id="@+id/mota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Mô tả sản phẩm:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chatlieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Chất liệu: Vải nhung tăm\n\nMàu sắc: Đen phối nâu đậm\n\nForm dáng: Sơ mi form fit\n\nCảm hứng thiết kế: Mẫu sơ mi với chất liệu và thiết kế tạo cảm giác sang và nổi bật, phù hợp với mood đi chơi, đi bar. Mặt trước được thêu chữ Z\n\nCông nghệ in ấn / thiết kế: Thêu cắt laze\n\nChi tiết đặc biệt: Toàn bộ graphic được thêu cắt laze" />
+    </LinearLayout>
+</ScrollView>
+
+
